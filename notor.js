@@ -37,7 +37,6 @@ module.exports = warnmessage => {
               rej(true);
               ok = false;
               detect = true;
-              ress.json(warnmessage);
             }
           });
           if (!detect) {
@@ -55,6 +54,7 @@ module.exports = warnmessage => {
       err => {
         if (err) {
           console.log("Tor");
+          warnmessage(ress);
         }
       }
     );
