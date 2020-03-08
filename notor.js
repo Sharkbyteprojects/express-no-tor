@@ -11,6 +11,7 @@ dns.reverse(req.connection.remoteAddress,(err,hostnames)=>{
 					if(sz.includes(toronion[0])||sz.includes(toronion[1])||sz.includes(toronion[2])||sz.includes(toronion[3])||sz.includes(toronion[4])||sz.includes(toronion[5])||sz.includes(toronion[6])||sz.includes(toronion[7])){
 						rej(true);
 						ok=false;
+						res.send(warnmessage);
 					}});
 					
 				}if(ok){res(ok);}
