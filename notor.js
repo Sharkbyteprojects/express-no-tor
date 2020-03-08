@@ -10,7 +10,7 @@ const toronion = [
   "accessnow.org"
 ];
 module.exports = warnmessage => {
-  return (req, res, next) => {
+  return (req, ress, next) => {
     new Promise((res, rej) => {
       dns.reverse((req.headers['x-forwarded-for'] || '').split(',')[0]
   || req.connection.remoteAddress, (err, hostnames) => {
@@ -37,7 +37,7 @@ module.exports = warnmessage => {
               rej(true);
               ok = false;
               detect = true;
-              res.json(warnmessage);
+              ress.json(warnmessage);
             }
           });
           if (!detect) {
