@@ -1,6 +1,6 @@
 {
   "name": "blocktor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Block Tor Sessions",
   "main": "notor.js",
   "scripts": {
