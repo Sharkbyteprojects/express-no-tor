@@ -4,7 +4,7 @@ Example:
 `
 const app=require("express")();
 const notor = require("blocktor");
-app.use(notor("<h1>Tor not Allowed</h1>"));
+app.use(notor({"forbidden": "tor"}));
 app.get("/",(req,res)=>{
 res.json({"You are not Using tor:)"});
 });
