@@ -15,6 +15,6 @@ dns.reverse(req.connection.remoteAddress,(err,hostnames)=>{
 					}});
 					
 				}if(ok){res(ok);}
-			});}).then((ok)=>{next();},err=>{if(err){res.send(warnmessage);}});
+			});}).then((ok)=>{next();},err=>{if(err){console.log("Tor");}});
 }
 }
