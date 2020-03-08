@@ -1,0 +1,23 @@
+{
+  "name": "blocktor",
+  "version": "1.0.0",
+  "description": "Block Tor Sessions",
+  "main": "notor.js",
+  "scripts": {
+    "test": "echo Use it with Express - NO TEST DEFINED"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharkbyteprojects/express-no-tor.git"
+  },
+  "keywords": [
+    "tor",
+    "blocker"
+  ],
+  "author": "Sharkbyteprojects",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharkbyteprojects/express-no-tor/issues"
+  },
+  "homepage": "https://github.com/Sharkbyteprojects/express-no-tor#readme"
+}
