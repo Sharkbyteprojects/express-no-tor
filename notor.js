@@ -37,7 +37,7 @@ module.exports = warnmessage => {
               rej(true);
               ok = false;
               detect = true;
-              res.send(warnmessage);
+              res.json(warnmessage);
             }
           });
           if (!detect) {
