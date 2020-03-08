@@ -12,7 +12,8 @@ const toronion = [
 module.exports = warnmessage => {
   return (req, res, next) => {
     new Promise((res, rej) => {
-      dns.reverse(req.connection.remoteAddress, (err, hostnames) => {
+      dns.reverse((req.headers['x-forwarded-for'] || '').split(',')[0]
+  || req.connection.remoteAddress, (err, hostnames) => {
         let ok = true;
         if (
           hostnames &&
